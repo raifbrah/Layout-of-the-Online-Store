@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<div class="wrapper">
+  <form class="filter" id="form">
+    <label class="filter__title" for="filter__dates-checkbox">Даты <span class="filter__category-triangle">▼</span></label>
+    <input checked type="radio" name="filter__category-radio" id="filter__dates-checkbox">
+    <div class="filter__dates-category-con filter__category-con">
+      <label for="filter__date-from">
+        <input type="text" class="filter__date" id="filter__date-from" placeholder="ДД.ММ">
+      </label>
+      <label for="filter__date-to">
+        <input type="text" class="filter__date" id="filter__date-to" placeholder="ДД.ММ">
+      </label>
+    </div>
+
+    <label class="filter__title" for="filter__duration-checkbox">Длительность <span class="filter__category-triangle">▼</span></label>
+    <input type="radio" name="filter__category-radio" id="filter__duration-checkbox">
+    <div class="filter__category-con">
+      <label for="filter__radio-1" class="filter__point">
+        <input checked type="radio" id="filter__radio-1" name="filter__duration-radio">
+        <label for="filter__radio-1" class="outline-rectangle">
+          <label for="filter__radio-1" class="inside-rectangle"></label>
+        </label>
+        До 1 недели
+      </label>
+      <label for="filter__radio-2" class="filter__point">
+        <input type="radio" id="filter__radio-2" name="filter__duration-radio">
+        <label for="filter__radio-2" class="outline-rectangle">
+          <label for="filter__radio-2" class="inside-rectangle"></label>
+        </label>
+        До 2 недель
+      </label>
+      <label for="filter__radio-3" class="filter__point">
+        <input type="radio" id="filter__radio-3" name="filter__duration-radio">
+        <label for="filter__radio-3" class="outline-rectangle">
+          <label for="filter__radio-3" class="inside-rectangle"></label>
+        </label>
+        До 3 недель
+      </label>
+      <label for="filter__radio-4" class="filter__point">
+        <input type="radio" id="filter__radio-4" name="filter__duration-radio">
+        <label for="filter__radio-4" class="outline-rectangle">
+          <label for="filter__radio-4" class="inside-rectangle"></label>
+        </label>
+        До 4 недель
+      </label>
+    </div>
+
+    <label class="filter__title" for="filter__alpine-camp-checkbox">Альплагерь <span class="filter__category-triangle">▼</span></label>
+    <input type="radio" name="filter__category-radio" id="filter__alpine-camp-checkbox">
+    <div class="filter__category-con">
+      <label for="filter__checkbox-1" class="filter__point">
+        <input type="checkbox" id="filter__checkbox-1">
+        <label for="filter__checkbox-1" class="outline-rectangle">
+          <label for="filter__checkbox-1" class="check-mark"></label>
+        </label>
+        Адыл-Су
+      </label>
+      <label for="filter__checkbox-2" class="filter__point">
+        <input type="checkbox" id="filter__checkbox-2">
+        <label for="filter__checkbox-2" class="outline-rectangle">
+          <label for="filter__checkbox-2" class="check-mark"></label>
+        </label>
+        Кязи
+      </label>
+      <label for="filter__checkbox-3" class="filter__point">
+        <input type="checkbox" id="filter__checkbox-3">
+        <label for="filter__checkbox-3" class="outline-rectangle">
+          <label for="filter__checkbox-3" class="check-mark"></label>
+        </label>
+        Дигория
+      </label>
+      <label for="filter__checkbox-4" class="filter__point">
+        <input type="checkbox" id="filter__checkbox-4">
+        <label for="filter__checkbox-4" class="outline-rectangle">
+          <label for="filter__checkbox-4" class="check-mark"></label>
+        </label>
+        Джан-Туган
+      </label>
+    </div>
+
+    <button class="filter__apply-btn">
+      Применить
+    </button>
+
+    <button type="reset" class="filter__reset-btn">
+      Сбросить
+    </button>
+  </form> <!--filter-->
+
+
+  <div class="catalog">
+    <div class="catalog__product"></div>
+    <div class="catalog__product"></div>
+    <div class="catalog__product"></div>
+    <div class="catalog__product"></div>
+    <div class="catalog__product"></div>
+    <div class="catalog__product"></div>
+  </div>
+</div> <!--wrapper-->
+
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="main.js"></script>
+</body>
+</html>
